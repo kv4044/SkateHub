@@ -1,10 +1,37 @@
+:root{
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --primary-color: #e63946;
+    --text-color: #ffffff;
+    --text-secondary: #bdbdbd;
+}
+
+/*.dark{
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --primary-color: #e63946;
+    --text-color: #ffffff;
+}
+
+.light{
+    --bg-color: #f5f5f5;
+    --card-color: #ffffff;
+    --primary-color: #e63946;
+    --text-color: #000000;
+}*/
+
 body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: Arial, sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
-    background-color: black;
+    background-color: #000;
     color: white;
     padding: 20px;
 }
@@ -15,13 +42,41 @@ nav a{
     margin-right: 15px;
 }
 
+nav a:hover{
+    color: var(--primary-color);
+}
+
 main{
+    flex: 1;
     padding: 20px;
+}
+main img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+section, article{
+    background-color: var(--card-color);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 footer{
-    background-color: black;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.foto{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.autor{
+    display: flex;
+    gap: 20px;
 }

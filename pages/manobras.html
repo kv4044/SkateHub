@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateHub-Manobras</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/manobras.css">
+</head>
+<body>
+    <header>
+        <h1>SkateHub</h1>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/skatistas.html">Skatistas</a>
+            <a href="../pages/skateparks.html">Skateparks</a>
+            <a href="../pages/manobras.html">Manobras</a>
+            <a href="../pages/sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Manobras</h2>
+            <div id="filtros">
+                <input type="text" id="pesquisa" placeholder="Pesquise manobras">
+
+                <select id="filtro-categoria" onchange="setCategoria(this.value)">
+                    <option value="Todos">Categoria</option>
+                    <option value="Flatground">Flatground</option>
+                    <option value="Flip">Flip</option>
+                    <option value="Grind/Slide">Grind/Slide</option>
+                    <option value="Grab">Grab</option>
+                </select>
+
+                <select id="filtro-dificuldade" onchange="setDificuldade(this.value)">
+                    <option value="Todas">Dificuldade</option>
+                    <option value="Fácil">Fácil</option>
+                    <option value="Média">Média</option>
+                    <option value="Difícil">Difícil</option>
+                </select>
+            </div>
+            <p id="contador"></p>
+        </section>
+
+        <section>
+            <table id="tabela-manobras">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Dificuldade</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <div id="modal" onclick="fecharModal()">
+        <div id="modal-conteudo" onclick="event.stopPropagation()">
+            <button id="modal-fechar" onclick="fecharModal()">✕</button>
+            <h2 id="modal-nome"></h2>
+            <p id="modal-categoria"></p>
+            <p id="modal-dificuldade"></p>
+            <p id="modal-descricao"></p>
+            <iframe id="modal-video" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - SkateHub</p>
+    </footer>
+    <script src="../js/dados.js"></script>
+    <script src="../js/manobras.js"></script>
+</body>
+</html>

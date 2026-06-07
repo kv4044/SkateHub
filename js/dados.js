@@ -70,5 +70,102 @@ const skatistas = [
         foto: "../img/skatistas/Yuto.jpeg",
         conquistas: ["Medalha de Ouro Tóquio 2020", "Medalha de Ouro Paris 2024", "Campeão Mundial SLS 2018"],
         destaque: false
+    },
+    {
+        nome: "Kaiky Vinicius",
+        pais: "Brasil",
+        modalidade: "Street",
+        bio: "O primeiro skatista da familia, ganhou seu primeiro skate com 3 anos de idade e cai como ninguém.",
+        foto: "../img/skatistas/kaiky.jpeg",
+        conquistas: ["1 Game of Skate", "Varios ematomas", "Muitos ralados"],
+        destaque: false
     }
 ]
+
+const manobras = [
+    {
+        nome: "Ollie",
+        categoria: "Flatground",
+        dificuldade: "Fácil",
+        descricao: "O salto básico do skate. O skater bate com a cauda (tail) no chão e arrasta o pé dianteiro para cima para nivelar o skate no ar.",
+        video: "https://www.youtube.com/embed/iC9WNYgcB7I"
+    },
+    {
+        nome: "Boardslide",
+        categoria: "Grind/Slide",
+        dificuldade: "Fácil",
+        descricao: "O skater salta para cima de um corrimão ou rail, deslizando com o centro da tábua perpendicularmente ao obstáculo.",
+        video: "https://www.youtube.com/embed/-Bq1zemlGYk"
+    },
+    {
+        nome: "50-50 Grind",
+        categoria: "Grind/Slide",
+        dificuldade: "Fácil",
+        descricao: "O grind básico onde ambos os eixos (trucks) do skate deslizam diretamente sobre a quina do obstáculo.",
+        video: "https://www.youtube.com/embed/OWF1xsSHU4w"
+    },
+    {
+        nome: "Frontside 180",
+        categoria: "Flatground",
+        dificuldade: "Fácil",
+        descricao: "O skater e o skate saltam juntos e rodam 180 graus no ar, virando o corpo de frente para a direção de movimento.",
+        video: "https://www.youtube.com/embed/3a0GrvyhujY"
+    },
+    {
+        nome: "Kickflip",
+        categoria: "Flip",
+        dificuldade: "Média",
+        descricao: "Inventado por Rodney Mullen. Um salto onde o skater chuta a borda do skate com o pé dianteiro para fazê-lo rodar 360 graus em torno do seu eixo longitudinal.",
+        video: "https://www.youtube.com/embed/1oLxtXUN-oc"
+    },
+    {
+        nome: "Heelflip",
+        categoria: "Flip",
+        dificuldade: "Média",
+        descricao: "Semelhante ao kickflip, mas a rotação é iniciada com o calcanhar do pé dianteiro, rodando na direção oposta.",
+        video: "https://www.youtube.com/embed/qLLYOQyLJpQ"
+    },
+
+    {
+        nome: "Indy Grab",
+        categoria: "Grab",
+        dificuldade: "Média",
+        descricao: "Manobra aérea clássica onde o skater agarra a tábua no centro com a mão traseira enquanto está no ar.",
+        video: "https://www.youtube.com/embed/hv8Lhxfub4o"
+    },
+    {
+        nome: "Nosegrind",
+        categoria: "Grind/Slide",
+        dificuldade: "Média",
+        descricao: "O skater desliza na quina do obstáculo apoiando apenas o truck dianteiro, mantendo o truck de trás no ar.",
+        video: "https://www.youtube.com/embed/Cu9hClbU-Ek"
+    },
+    {
+        nome: "Melon Grab",
+        categoria: "Grab",
+        dificuldade: "Média",
+        descricao: "O skater agarra a borda traseira da tábua com a mão dianteira pelas costas das pernas enquanto está no ar.",
+        video: "https://www.youtube.com/embed/dGUkxLMTVc0"
+    },
+    {
+        nome: "360 Flip (Tre Flip)",
+        categoria: "Flip",
+        dificuldade: "Difícil",
+        descricao: "Uma combinação clássica de um 360 Shuvit com um Kickflip. Uma das manobras mais bonitas e populares do skate de rua.",
+        video: "https://www.youtube.com/embed/yMs5sSWIa9c"
+    },
+    {
+        nome: "Kickflip Indy",
+        categoria: "Grab",
+        dificuldade: "Difícil",
+        descricao: "Realização de um Kickflip no ar seguido imediatamente por um Indy grab antes de aterrar na rampa.",
+        video: "https://www.youtube.com/embed/FpAfIjU8sD4"
+    },
+    {
+        nome: "Caballerial",
+        categoria: "Flatground",
+        dificuldade: "Difícil",
+        descricao: "Um Fakie 360 Ollie (salto completo de 360 graus a andar para trás), inventado por Steve Caballero.",
+        video: "https://www.youtube.com/embed/DtTIkajDS-E"
+    }
+];

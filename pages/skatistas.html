@@ -24,7 +24,20 @@
     <main>
         <section>
             <h2>Principais skatistas</h2>
-            <input type="text" id="pesquisa" placeholder="Pesquisar skatistas">
+            <div id="filtros">
+                <input type="text" id="pesquisa" placeholder="Pesquisar skatistas">
+
+                <select id="filtro-pais" onchange="setPais(this.value)">
+                    <option value="Todos">Pais</option>
+                    <option value="Austrália">Austrália</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Japão">Japão</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Reino Unido">Reino Unido</option>
+
+                </select>
+            </div>
             <p id="contador"></p>
         </section>
 

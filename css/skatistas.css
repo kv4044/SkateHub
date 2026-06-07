@@ -4,30 +4,16 @@
     gap: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #lista-skatistas {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     #lista-skatistas {
         grid-template-columns: 1fr;
     }
-}
-
-input {
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    width: 50%;
-    height: 30px;
-    border-radius : 5px;
-    border: none;
-}
-
-input:focus {
-    outline: 2px solid var(--primary-color);
-    background-color: var(--card-color);
 }
 
 .card {
@@ -35,6 +21,10 @@ input:focus {
     border-radius: 10px;
     padding: 15px;
     cursor: pointer;
+}
+
+.card:hover {
+    background-color: #151414;
 }
 
 .card img {
@@ -73,32 +63,6 @@ input:focus {
     display: block;
 }
 
-#modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-#modal.aberto {
-    display: flex;
-}
-
-#modal-conteudo {
-    background-color: var(--card-color);
-    border-radius: 10px;
-    padding: 30px;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-}
-
 #modal-foto {
     width: 100%;
     height: 250px;
@@ -108,19 +72,11 @@ input:focus {
     margin-bottom: 15px;
 }
 
-#modal-fechar {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    color: var(--text-color);
-    font-size: 20px;
+#filtros select {
+    width: 160px;
     cursor: pointer;
 }
-
-#contador {
-    color: var(--text-secondary);
-    font-size: 14px;
-    margin-top: 5px;
+#filtros input {
+    width: 20%;
 }
+

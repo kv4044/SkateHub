@@ -1,7 +1,7 @@
 function mostrarSkatistas(lista) {
     const container = document.getElementById("lista-skatistas");
     container.innerHTML = ""
-    lista.forEach((s, index) => {
+    lista.forEach((s) => {
         const indexOriginal = skatistas.indexOf(s)
         container.innerHTML += `
         <div class="card" onclick="abrirModal(${indexOriginal})">
@@ -42,17 +42,24 @@ function atualizarContador(lista, texto) {
     }
 }
 
-document.getElementById("pesquisa").addEventListener("input", function() {
-    const texto = this.value.toLowerCase();
+let paisAtivo = "Todos";
+
+function setPais(valor) {
+    paisAtivo = valor;
+    aplicarFiltros();
+}
+
+function aplicarFiltros() {
+    const texto = document.getElementById("pesquisa").value.toLowerCase();
     const filtrados = skatistas.filter(s =>
-    s.nome.toLowerCase().includes(texto) ||
-    s.modalidade.toLowerCase().includes(texto) ||
-    s.pais.toLowerCase().includes(texto)
+        (paisAtivo === "Todos" || s.pais === paisAtivo) &&
+        (texto === "" || s.nome.toLowerCase().includes(texto))
     )
     mostrarSkatistas(filtrados)
-    atualizarContador(filtrados, this.value);
-})
+    atualizarContador(filtrados, texto);
+}
 
+document.getElementById("pesquisa").addEventListener("input", aplicarFiltros)
 
 mostrarSkatistas(skatistas)
 atualizarContador(skatistas, "")

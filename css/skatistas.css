@@ -24,7 +24,7 @@
 }
 
 .card:hover {
-    background-color: #151414;
+    background-color: var(--hover-color);
 }
 
 .card img {

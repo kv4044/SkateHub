@@ -5,7 +5,7 @@ function mudaTema() {
 
     localStorage.setItem("tema", temaAtual)
 
-    document.getElementById("btn-tema").textContent = temaAtual === "claro" ? "🌙" : "☀️"
+    document.getElementById("btn-tema").textContent = temaAtual === "claro" ? "⏾" : "☀︎️"
 }
 
 if (localStorage.getItem("tema") === "claro") {
@@ -13,4 +13,4 @@ if (localStorage.getItem("tema") === "claro") {
 }
 
 document.getElementById("btn-tema").textContent =
-    localStorage.getItem("tema") === "claro" ? "🌙" : "☀️"
+    localStorage.getItem("tema") === "claro" ? "⏾" : "☀"

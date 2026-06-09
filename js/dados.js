@@ -78,7 +78,7 @@ const skatistas = [
         bio: "O primeiro skatista da familia, ganhou seu primeiro skate com 3 anos de idade e cai como ninguém.",
         foto: "../img/skatistas/kaiky.jpeg",
         conquistas: ["1 Game of Skate", "Varios ematomas", "Muitos ralados"],
-        destaque: false
+        destaque: true
     }
 ]
 
@@ -167,5 +167,98 @@ const manobras = [
         dificuldade: "Difícil",
         descricao: "Um Fakie 360 Ollie (salto completo de 360 graus a andar para trás), inventado por Steve Caballero.",
         video: "https://www.youtube.com/embed/DtTIkajDS-E"
+    }
+];
+
+const skateparks = [
+    {
+        nome: "Parque da Juventude",
+        cidade: "São Paulo, Brasil",
+        dificuldade: "Profissional",
+        imagem: "../img/skatepark/Parque-da-Juventude_skatepark.webp",
+        tipo: "Outdoor",
+        obstaculos: ["Bowl de Transição Rápida", "Corrimões de Descida", "Hubbas", "Ledges Curvas", "Funbox"],
+        destaque: true
+    },
+    {
+        nome: "Venice Skatepark",
+        cidade: "Venice Beach, USA",
+        dificuldade: "Intermédio",
+        imagem: "../img/skatepark/venice_skatepark.jpg",
+        tipo: "Outdoor",
+        obstaculos: ["Snakerun", "Bowls Profundos", "Ledges", "Quarters", "Escadarias com Corrimão"],
+        destaque: true
+    },
+    {
+        nome: "Monsanto Skatepark",
+        cidade: "Lisboa, Portugal",
+        dificuldade: "Avançado",
+        imagem: "../img/skatepark/monsanto_skatepark.webp",
+        tipo: "Outdoor",
+        obstaculos: ["Bowl Aberto", "Curbes", "Mini-rampa", "Flatbar", "Quarter-pipes"],
+        destaque: false
+    },
+    {
+        nome: "Skatepark de Faro",
+        cidade: "Faro, Portugal",
+        dificuldade: "Intermédio",
+        imagem: "../img/skatepark/faro_skatepark.webp",
+        tipo: "Outdoor",
+        obstaculos: ["Pirâmide central", "Manual pad", "Ledges", "Carris redondos", "Quarter pipe largo"],
+        destaque: false
+    },
+    {
+        nome: "Parque das Nações Skatepark",
+        cidade: "Lisboa, Portugal",
+        dificuldade: "Iniciante",
+        imagem: "../img/skatepark/parque-das-nacoes_skatepark.jpg",
+        obstaculos: ["Ledges baixos", "Flatbars inclinadas", "Bancos de betão", "Quarters pequenos", "Mini-pyramid"],
+        tipo: "Outdoor",
+        destaque: false
+    },
+    {
+        nome: "Chelas Skatepark (Decathlon)",
+        cidade: "Lisboa, Portugal",
+        dificuldade: "Avançado",
+        imagem: "../img/skatepark/Chelas_skatepark.webp",
+        tipo: "Outdoor",
+        obstaculos: ["Super Bowl", "Euro-gap", "A-Frame", "Hubba comprido", "Speed bumps"],
+        destaque: false
+    },
+    {
+        nome: "Braga Skatepark",
+        cidade: "Braga, Portugal",
+        dificuldade: "Intermédio",
+        imagem: "../img/skatepark/braga_skatepark.jpg",
+        tipo: "Outdoor",
+        obstaculos: ["Cradle Bowl", "Spine", "Bumps", "Ledges laterais", "Handrail em escadas"],
+        destaque: false
+    },
+    {
+        nome: "Tomar Skatepark",
+        cidade: "Tomar, Portugal",
+        dificuldade: "Intermédio",
+        imagem: "../img/skatepark/tomar_skatepark.jpeg",
+        tipo: "Outdoor",
+        obstaculos: ["Quarterpipe", "Funbox", "Manualpad", "Flatrail", "Ledge"],
+        destaque: false
+    },
+    {
+        nome: "Skatepark de Loulé",
+        cidade: "Loulé, Portugal",
+        dificuldade: "Intermédio",
+        imagem: "../img/skatepark/loule_skatepark.webp",
+        tipo: "Outdoor",
+        obstaculos: ["Half-pipe", "Fly-box", "Spine", "Curbes inclinados", "Mesa de piquenique de metal"],
+        destaque: false
+    },
+    {
+        nome: "Tampa Skatepark (SPoT)",
+        cidade: "Tampa, USA",
+        dificuldade: "Profissional",
+        imagem: "../img/skatepark/tampa_skatepark.jpg",
+        tipo: "Indoor / Outdoor",
+        obstaculos: ["Courtyard Street Course", "Vert Ramp", "Pro Bowl", "Wallrides", "Double Sets com Corrimão"],
+        destaque: true
     }
 ];

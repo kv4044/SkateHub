@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateHub-Skatepark</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/skateparks.css">
+</head>
+<body>
+    <header>
+        <h1>Skate<span style="color: #9B111E">Hub</span></h1>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/skatistas.html">Skatistas</a>
+            <a href="../pages/skateparks.html" class="ativo">Skateparks</a>
+            <a href="../pages/manobras.html">Manobras</a>
+            <a href="../pages/sobre.html">Sobre</a>
+        </nav>
+        <button id="btn-tema" onclick="mudaTema()">☀</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Skateparks</h2>
+            <div id="filtros">
+                <input type="text" id="pesquisa" placeholder="Pesquisar skatepark">
+
+                <select id="filtro-tipo" onchange="setTipo(this.value)">
+                    <option value="Todos">Tipo</option>
+                    <option value="Outdoor">Outdoor</option>
+                    <option value="Indoor / Outdoor">Indoor / Outdoor</option>
+                </select>
+                <select id="filtro-dificuldade" onchange="setDificuldade(this.value)">
+                    <option value="Todas">Dificuldade</option>
+                    <option value="Iniciante">Iniciante</option>
+                    <option value="Intermédio">Intermédio</option>
+                    <option value="Avançado">Avançado</option>
+                    <option value="Profissional">Profissional</option>
+                </select>
+            </div>
+            <p id="contador"></p>
+        </section>
+
+        <section>
+            <div id="lista-skateparks"></div>
+        </section>
+    </main>
+
+    <div id="modal" onclick="fecharModal()">
+        <div id="modal-conteudo" onclick="event.stopPropagation()">
+            <button id="modal-fechar" onclick="fecharModal()">✕</button>
+            <img id="modal-foto">
+            <h2 id="modal-nome"></h2>
+            <p id="modal-cidade"></p>
+            <p id="modal-dificuldade"></p>
+            <p id="modal-tipo"></p>
+            <div id="modal-obstaculo"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - SkateHub</p>
+    </footer>
+    <script src="../js/dados.js"></script>
+    <script src="../js/skateparks.js"></script>
+    <script src="../js/tema.js"></script>
+
+</body>
+</html>

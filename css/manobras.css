@@ -7,6 +7,9 @@
     #filtros select{
         width: 100%;
     }
+    #filtro input{
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -63,14 +66,5 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-
-
 }
 
-#filtros select {
-    width: 160px;
-    cursor: pointer;
-}
-#filtros input {
-    flex: 1;
-}

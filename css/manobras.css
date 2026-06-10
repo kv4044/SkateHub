@@ -31,6 +31,11 @@
     color: var(--primary-color);
 }
 
+.dificuldade-profissional {
+    color: #a801a8;
+}
+
+
 #tabela-manobras {
     width: 100%;
     border-collapse: collapse;

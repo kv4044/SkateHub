@@ -79,8 +79,63 @@ const skatistas = [
         foto: "../img/skatistas/kaiky.jpeg",
         conquistas: ["1 Game of Skate", "Varios ematomas", "Muitos ralados"],
         destaque: true
+    },
+    {
+        nome: "Rodney Mullen",
+        pais: "Estados Unidos",
+        modalidade: "Freestyle / Flatground",
+        foto: "../img/skatistas/Rodney.jpeg",
+        bio: "O padrinho do skate moderno de rua. Inventou quase todas as manobras básicas de flatground, incluindo o Ollie Flatground, Kickflip e Heelflip.",
+        conquistas: ["Inventor do Kickflip, Heelflip e 360 Flip", "Membro do Skateboarding Hall of Fame"],
+        destaque: false
+    },
+    {
+        nome: "Aurelien Giraud",
+        pais: "França",
+        modalidade: "Street",
+        foto: "../img/skatistas/aurelien.jpeg",
+        bio: "Skater francês conhecido pelo seu estilo poderoso, pop gigante e capacidade de mandar manobras gigantescas nos maiores gaps.",
+        conquistas: ["Campeão Mundial de Street 2022", "1º Lugar no Dew Tour 2021"],
+        destaque: false
+    },
+
+    {
+        nome: "Leticia Bufoni",
+        pais: "Brasil",
+        modalidade: "Street",
+        foto: "../img/skatistas/leticia.jpeg",
+        bio: "Uma das atletas mais influentes da história do skate feminino. Conquistou inúmeras medalhas de ouro nos X Games e é uma referência global.",
+        conquistas: ["6x Medalha de Ouro X Games Street", "Campeã Mundial SLS 2015"],
+        destaque: false
+    },
+    {
+        nome: "Lizzie Armanto",
+        pais: "Finlândia / EUA",
+        modalidade: "Park / Vert",
+        foto: "../img/skatistas/Lizzie.jpeg",
+        bio: "Uma pioneira do skate vertical moderno, a primeira mulher a completar a rampa 'Loop' da morte de Tony Hawk.",
+        conquistas: ["Primeira mulher a completar o Loop de Tony Hawk", "Medalha de Ouro X Games 2013"],
+        destaque: false
+    },
+    {
+        nome: "Keegan Palmer",
+        pais: "Austrália",
+        modalidade: "Park",
+        foto: "../img/skatistas/keegan.jpeg",
+        bio: "Dominador absoluto da modalidade de Park nos Jogos Olímpicos, sagrando-se bicampeão olímpico com exibições de voo inacreditáveis.",
+        conquistas: ["Medalha de Ouro Tóquio 2020 Park", "Medalha de Ouro Paris 2024 Park"],
+        destaque: false
+    },
+    {
+        nome: "Chris Joslin",
+        pais: "Estados Unidos",
+        modalidade: "Street / Gaps",
+        foto: "../img/skatistas/chris.jpeg",
+        bio: "O demolidor das escadas públicas, famoso pelo seu pop brutal e resiliência física fora de série em escadarias icónicas.",
+        conquistas: ["Vencedor do Tampa Pro 2022", "Múltiplas vídeo parts lendárias no 'Plan B True'"],
+        destaque: false
     }
-]
+];
 
 const manobras = [
     {
@@ -110,6 +165,27 @@ const manobras = [
         dificuldade: "Fácil",
         descricao: "O skater e o skate saltam juntos e rodam 180 graus no ar, virando o corpo de frente para a direção de movimento.",
         video: "https://www.youtube.com/embed/3a0GrvyhujY"
+    },
+    {
+        nome: "Boneless",
+        categoria: "Vert/Bowl",
+        dificuldade: "Fácil",
+        descricao: "Uma manobra old-school onde o skater tira o pé da frente, agarra a tábua, empurra o chão com o pé solto e salta de volta.",
+        video: ""
+    },
+    {
+        nome: "Half Cab",
+        categoria: "Flatground",
+        dificuldade: "Fácil",
+        descricao: "Um Fakie 180 Ollie. É a versão simplificada do Caballerial, girando apenas meia rotação.",
+        video: ""
+    },
+    {
+        nome: "Pop Shuvit",
+        categoria: "Flatground",
+        dificuldade: "Fácil",
+        descricao: "Combina um salto com uma rotação de 180 graus da tábua debaixo dos pés do skater, sem rotação no eixo de flip.",
+        video: ""
     },
     {
         nome: "Kickflip",
@@ -148,6 +224,63 @@ const manobras = [
         video: "https://www.youtube.com/embed/dGUkxLMTVc0"
     },
     {
+        nome: "Heelflip",
+        categoria: "Flip",
+        dificuldade: "Média",
+        descricao: "Semelhante ao kickflip, mas a rotação é iniciada com o calcanhar do pé dianteiro, rodando na direção oposta.",
+        video: ""
+    },
+    {
+        nome: "Mute Grab",
+        categoria: "Grab",
+        dificuldade: "Média",
+        descricao: "O skater agarra a borda frontal do skate com a mão dianteira enquanto dobra os joelhos no ar.",
+        video: ""
+    },
+    {
+        nome: "Nollie",
+        categoria: "Flatground",
+        dificuldade: "Média",
+        descricao: "Um salto realizado batendo com o bico (nose) do skate usando o pé dianteiro, em vez do pé traseiro no tail.",
+        video: ""
+    },
+    {
+        nome: "Nose Slide",
+        categoria: "Grind/Slide",
+        dificuldade: "Média",
+        descricao: "O skater salta e faz deslizar apenas o bico dianteiro da tábua (nose) ao longo do obstáculo.",
+        video: ""
+    },
+    {
+        nome: "Melon Grab",
+        categoria: "Grab",
+        dificuldade: "Média",
+        descricao: "O skater agarra a borda traseira da tábua com a mão dianteira pelas costas das pernas enquanto está no ar.",
+        video: ""
+    },
+    {
+        nome: "Varial Kickflip",
+        categoria: "Flip",
+        dificuldade: "Média",
+        descricao: "Fusão de um Pop Shuvit de 180 graus com um Kickflip convencional.",
+        video: ""
+    },
+
+    {
+        nome: "5-0 Grind",
+        categoria: "Grind/Slide",
+        dificuldade: "Média",
+        descricao: "O oposto do nosegrind. O skater desliza apoiando apenas o truck traseiro, mantendo a frente erguida no ar.",
+        video: ""
+    },
+    {
+        nome: "Crooked Grind",
+        categoria: "Grind/Slide",
+        dificuldade: "Média",
+        descricao: "O skater apoia e desliza no truck dianteiro com a tábua posicionada num ângulo diagonal em relação ao obstáculo.",
+        video: ""
+    },
+    {
         nome: "360 Flip (Tre Flip)",
         categoria: "Flip",
         dificuldade: "Difícil",
@@ -167,6 +300,64 @@ const manobras = [
         dificuldade: "Difícil",
         descricao: "Um Fakie 360 Ollie (salto completo de 360 graus a andar para trás), inventado por Steve Caballero.",
         video: "https://www.youtube.com/embed/DtTIkajDS-E"
+    },
+
+    {
+        nome: "Hardflip",
+        categoria: "Flip",
+        dificuldade: "Difícil",
+        descricao: "Uma manobra técnica e complexa que combina um Frontside Shuvit com um Kickflip, fazendo o skate passar por entre as pernas do skater.",
+        video: ""
+    },
+    {
+        nome: "Inward Heelflip",
+        categoria: "Flip",
+        dificuldade: "Difícil",
+        descricao: "Combinação de um Backside Shuvit com um Heelflip, fazendo a tábua rodar de forma invertida sob o corpo.",
+        video: ""
+    },
+    {
+        nome: "Smith Grind",
+        categoria: "Grind/Slide",
+        dificuldade: "Difícil",
+        descricao: "O truck de trás desliza na quina, enquanto o truck da frente é empurrado para baixo e ligeiramente para o lado oposto do obstáculo.",
+        video: ""
+    },
+    {
+        nome: "Tail Slide",
+        categoria: "Grind/Slide",
+        dificuldade: "Difícil",
+        descricao: "O skater salta e faz deslizar apenas a parte de trás da tábua (tail) ao longo do topo do obstáculo.",
+        video: ""
+    },
+    {
+        nome: "Feeble Grind",
+        categoria: "Grind/Slide",
+        dificuldade: "Difícil",
+        descricao: "O truck traseiro desliza no obstáculo enquanto o truck frontal passa por cima e aponta para baixo no lado da quina.",
+        video: ""
+    },
+
+    {
+        nome: "Stalefish Grab",
+        categoria: "Grab",
+        dificuldade: "Difícil",
+        descricao: "Agarra-se a borda traseira do skate com a mão traseira pelas costas da perna de trás.",
+        video: ""
+    },
+    {
+        nome: "Laser Flip",
+        categoria: "Flip",
+        dificuldade: "Difícil",
+        descricao: "Uma combinação de um Frontside 360 Shuvit com um Heelflip. É o oposto direto do Tre Flip e requer imensa precisão.",
+        video: ""
+    },
+    {
+        nome: "McTwist 540",
+        categoria: "Vert/Bowl",
+        dificuldade: "Profissional",
+        descricao: "Uma manobra aérea lendária consistindo numa rotação de 540 graus combinada com um mortal (flip) frontal, agarrando o skate.",
+        video: ""
     }
 ];
 

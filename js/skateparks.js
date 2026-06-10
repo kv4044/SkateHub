@@ -1,7 +1,15 @@
+let paginaAtual = 1
+const porPagina = 4
+
+
 function mostrarSkateparks(lista) {
     const container = document.getElementById("lista-skateparks");
+    const inicio = (paginaAtual - 1) * porPagina;
+    const fim = inicio + porPagina;
+    const paginados = lista.slice(inicio, fim);
+
     container.innerHTML = ""
-    lista.forEach((s) => {
+    paginados.forEach((s) => {
         const indexOriginal = skateparks.indexOf(s)
         container.innerHTML += `
         <div class="card" onclick="abrirModal(${indexOriginal})">
@@ -13,6 +21,23 @@ function mostrarSkateparks(lista) {
             </div>
         </div>`
     })
+    mostrarPaginacao(lista)
+}
+
+function mostrarPaginacao(lista) {
+    const total = Math.ceil(lista.length / porPagina);
+    const container = document.getElementById("paginacao");
+    container.innerHTML = ""
+
+    for (let i = 1; i <= total; i++) {
+        container.innerHTML += `<button class="${i === paginaAtual ? 'pagina-ativa' : ''}"
+        onclick="irParaPagina(${i})">${i}</button>`
+    }
+
+}function irParaPagina(pagina){
+    paginaAtual = pagina
+    aplicarFiltros()
+    window.scrollTo(0, 0)
 }
 
 function abrirModal(index) {
@@ -64,6 +89,7 @@ function aplicarFiltros() {
     )
     mostrarSkateparks(filtradas);
     atualizarContador(filtradas, texto);
+    paginaAtual = 1;
 }
 
 document.getElementById("pesquisa").addEventListener("input",aplicarFiltros);

@@ -110,7 +110,7 @@ const skatistas = [
     },
     {
         nome: "Lizzie Armanto",
-        pais: "Finlândia / EUA",
+        pais: "Estados Unidos",
         modalidade: "Park / Vert",
         foto: "../img/skatistas/Lizzie.jpeg",
         bio: "Uma pioneira do skate vertical moderno, a primeira mulher a completar a rampa 'Loop' da morte de Tony Hawk.",

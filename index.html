@@ -6,6 +6,8 @@
     <title>SkateHub</title>
 
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
 
@@ -24,27 +26,28 @@
 
     <main>
 
-        <section>
-            <h2>Bem-vindo ao SkateHub</h2>
-
+        <section class="hero">
             <img src="img/index/skate.jpg" alt="Imagem de skate">
-
-            <p>
-                O SkateHub é um site dedicado ao mundo do skate.
-                Aqui podes conhecer skatistas, skateparks e algumas
-                das manobras mais populares.
-            </p>
+            <div class="hero-texto">
+                <h2>Bem-vindo ao SkateHub</h2>
+                <p>Skatistas, skateparks e manobras num só lugar</p>
+            </div>
         </section>
 
         <section>
-            <h2>O que vais encontrar?</h2>
+            <div class="secao-header">
+                <h2>Skatistas em destaque</h2>
+                <a href="pages/skatistas.html">Ver todos</a>
+            </div>
+            <div id="lista-destaque-skatistas"></div>
+        </section>
 
-            <ul>
-                <li>Skatistas famosos</li>
-                <li>Skateparks recomendados</li>
-                <li>Manobras de skate</li>
-                <li>Informações sobre a cultura skate</li>
-            </ul>
+        <section>
+            <div class="secao-header">
+                <h2>Skateparks em destaque</h2>
+                <a href="pages/skateparks.html">Ver todos</a>
+            </div>
+            <div id="lista-destaque-skateparks"></div>
         </section>
 
     </main>
@@ -52,6 +55,8 @@
     <footer>
         <p>&copy; 2026 - SkateHub</p>
     </footer>
+    <script src="js/dados.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/tema.js"></script>
 
 </body>

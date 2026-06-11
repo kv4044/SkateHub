@@ -1,7 +1,14 @@
+let paginaAtual = 1
+const porPagina = 10
+
 function mostrarManobras(lista){
     const corpo = document.getElementById("corpo-tabela");
+    const inicio = (paginaAtual - 1) * porPagina;
+    const fim = inicio + porPagina;
+    const paginados = lista.slice(inicio, fim);
+
     corpo.innerHTML = "";
-    lista.forEach((m) => {
+    paginados.forEach((m) => {
         const indexOriginal = manobras.indexOf(m)
         corpo.innerHTML += `
         <tr onclick="abrirModal(${indexOriginal})">
@@ -10,6 +17,23 @@ function mostrarManobras(lista){
             <td class="dificuldade-${m.dificuldade.toLowerCase()}">${m.dificuldade}</td>
         </tr>`
     })
+    mostrarPaginacao(lista)
+}
+
+function mostrarPaginacao(lista) {
+    const total = Math.ceil(lista.length / porPagina);
+    const container = document.getElementById("paginacao");
+    container.innerHTML = ""
+
+    for (let i = 1; i <= total; i++) {
+        container.innerHTML += `<button class="${i === paginaAtual ? 'pagina-ativa' : ''}"
+        onclick="irParaPagina(${i})">${i}</button>`
+    }
+
+}function irParaPagina(pagina){
+    paginaAtual = pagina
+    aplicarFiltros()
+    window.scrollTo(0, 0)
 }
 
 function abrirModal(index){
@@ -59,6 +83,7 @@ function aplicarFiltros(){
     )
     mostrarManobras(filtradas);
     atualizarContador(filtradas, texto);
+    paginaAtual = 1;
 }
 
 document.getElementById("pesquisa").addEventListener("input", aplicarFiltros);

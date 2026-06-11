@@ -98,7 +98,6 @@ const skatistas = [
         conquistas: ["Campeão Mundial de Street 2022", "1º Lugar no Dew Tour 2021"],
         destaque: false
     },
-
     {
         nome: "Leticia Bufoni",
         pais: "Brasil",
@@ -171,21 +170,21 @@ const manobras = [
         categoria: "Vert/Bowl",
         dificuldade: "Fácil",
         descricao: "Uma manobra old-school onde o skater tira o pé da frente, agarra a tábua, empurra o chão com o pé solto e salta de volta.",
-        video: ""
+        video: "https://www.youtube.com/embed/F5SmTZT-9Mw"
     },
     {
         nome: "Half Cab",
         categoria: "Flatground",
         dificuldade: "Fácil",
         descricao: "Um Fakie 180 Ollie. É a versão simplificada do Caballerial, girando apenas meia rotação.",
-        video: ""
+        video: "https://www.youtube.com/embed/-EJRVnq_tYg?"
     },
     {
         nome: "Pop Shuvit",
         categoria: "Flatground",
         dificuldade: "Fácil",
         descricao: "Combina um salto com uma rotação de 180 graus da tábua debaixo dos pés do skater, sem rotação no eixo de flip.",
-        video: ""
+        video: "https://www.youtube.com/embed/ug1DFKYfoMw"
     },
     {
         nome: "Kickflip",
@@ -235,50 +234,42 @@ const manobras = [
         categoria: "Grab",
         dificuldade: "Média",
         descricao: "O skater agarra a borda frontal do skate com a mão dianteira enquanto dobra os joelhos no ar.",
-        video: ""
+        video: "https://www.youtube.com/embed/JO9pXn17_dQ"
     },
     {
         nome: "Nollie",
         categoria: "Flatground",
         dificuldade: "Média",
         descricao: "Um salto realizado batendo com o bico (nose) do skate usando o pé dianteiro, em vez do pé traseiro no tail.",
-        video: ""
+        video: "https://www.youtube.com/embed/v0t_ZVAOC8w"
     },
     {
         nome: "Nose Slide",
         categoria: "Grind/Slide",
         dificuldade: "Média",
         descricao: "O skater salta e faz deslizar apenas o bico dianteiro da tábua (nose) ao longo do obstáculo.",
-        video: ""
-    },
-    {
-        nome: "Melon Grab",
-        categoria: "Grab",
-        dificuldade: "Média",
-        descricao: "O skater agarra a borda traseira da tábua com a mão dianteira pelas costas das pernas enquanto está no ar.",
-        video: ""
+        video: "https://www.youtube.com/embed/oo-FW_XVjaw"
     },
     {
         nome: "Varial Kickflip",
         categoria: "Flip",
         dificuldade: "Média",
         descricao: "Fusão de um Pop Shuvit de 180 graus com um Kickflip convencional.",
-        video: ""
+        video: "https://www.youtube.com/embed/ryzDlVSj82M"
     },
-
     {
         nome: "5-0 Grind",
         categoria: "Grind/Slide",
         dificuldade: "Média",
         descricao: "O oposto do nosegrind. O skater desliza apoiando apenas o truck traseiro, mantendo a frente erguida no ar.",
-        video: ""
+        video: "https://www.youtube.com/embed/My2subgoueE"
     },
     {
         nome: "Crooked Grind",
         categoria: "Grind/Slide",
         dificuldade: "Média",
         descricao: "O skater apoia e desliza no truck dianteiro com a tábua posicionada num ângulo diagonal em relação ao obstáculo.",
-        video: ""
+        video: "https://www.youtube.com/embed/UlO1sCeD2KM"
     },
     {
         nome: "360 Flip (Tre Flip)",
@@ -301,63 +292,61 @@ const manobras = [
         descricao: "Um Fakie 360 Ollie (salto completo de 360 graus a andar para trás), inventado por Steve Caballero.",
         video: "https://www.youtube.com/embed/DtTIkajDS-E"
     },
-
     {
         nome: "Hardflip",
         categoria: "Flip",
         dificuldade: "Difícil",
         descricao: "Uma manobra técnica e complexa que combina um Frontside Shuvit com um Kickflip, fazendo o skate passar por entre as pernas do skater.",
-        video: ""
+        video: "https://www.youtube.com/embed/y1utpDm0SR8"
     },
     {
         nome: "Inward Heelflip",
         categoria: "Flip",
         dificuldade: "Difícil",
         descricao: "Combinação de um Backside Shuvit com um Heelflip, fazendo a tábua rodar de forma invertida sob o corpo.",
-        video: ""
+        video: "https://www.youtube.com/embed/_XfJDqQ45ZQ"
     },
     {
         nome: "Smith Grind",
         categoria: "Grind/Slide",
         dificuldade: "Difícil",
         descricao: "O truck de trás desliza na quina, enquanto o truck da frente é empurrado para baixo e ligeiramente para o lado oposto do obstáculo.",
-        video: ""
+        video: "https://www.youtube.com/embed/e1oXFT0F6e4"
     },
     {
         nome: "Tail Slide",
         categoria: "Grind/Slide",
         dificuldade: "Difícil",
         descricao: "O skater salta e faz deslizar apenas a parte de trás da tábua (tail) ao longo do topo do obstáculo.",
-        video: ""
+        video: "https://www.youtube.com/embed/7l09PLpLDBc"
     },
     {
         nome: "Feeble Grind",
         categoria: "Grind/Slide",
         dificuldade: "Difícil",
         descricao: "O truck traseiro desliza no obstáculo enquanto o truck frontal passa por cima e aponta para baixo no lado da quina.",
-        video: ""
+        video: "https://www.youtube.com/embed/eLBWzMJir3o"
     },
-
     {
         nome: "Stalefish Grab",
         categoria: "Grab",
         dificuldade: "Difícil",
         descricao: "Agarra-se a borda traseira do skate com a mão traseira pelas costas da perna de trás.",
-        video: ""
+        video: "https://www.youtube.com/embed/Hwdks-evE1M"
     },
     {
         nome: "Laser Flip",
         categoria: "Flip",
         dificuldade: "Difícil",
         descricao: "Uma combinação de um Frontside 360 Shuvit com um Heelflip. É o oposto direto do Tre Flip e requer imensa precisão.",
-        video: ""
+        video: "https://www.youtube.com/embed/BSm6zT5_AVQ"
     },
     {
         nome: "McTwist 540",
-        categoria: "Vert/Bowl",
+        categoria: "Grab",
         dificuldade: "Profissional",
-        descricao: "Uma manobra aérea lendária consistindo numa rotação de 540 graus combinada com um mortal (flip) frontal, agarrando o skate.",
-        video: ""
+        descricao: "Uma manobra aérea lendária consistindo numa rotação de 540 graus combinada com um flip frontal, agarrando o skate.",
+        video: "https://www.youtube.com/embed/uzS7-_eKyMc"
     }
 ];
 

@@ -68,6 +68,33 @@
     text-decoration: underline;
 }
 
+.status {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.status p{
+    color: var(--text-secondary);
+    margin-top: 0;
+}
+
+#total-skatistas {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+}
+#total-skateparks {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+}
+#total-manobras {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
 #lista-destaque-skateparks, #lista-destaque-skatistas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

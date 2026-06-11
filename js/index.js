@@ -15,5 +15,19 @@ function mostrarDestaque(lista, containerId, linkBase) {
     })
 }
 
+function animarContador(id,valorfinal){
+    let contador = 0;
+    const intervalo = setInterval(() => {
+        contador++;
+        document.getElementById(id).textContent = contador;
+        if (contador >= valorfinal) {
+            clearInterval(intervalo);
+        }
+    }, 50);
+}
+animarContador("total-skatistas",skatistas.length)
+animarContador("total-skateparks",skateparks.length)
+animarContador("total-manobras",manobras.length)
+
 mostrarDestaque(skatistas, "lista-destaque-skatistas", "pages/skatistas.html");
 mostrarDestaque(skateparks, "lista-destaque-skateparks", "pages/skateparks.html");

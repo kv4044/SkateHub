@@ -6,6 +6,7 @@
     <title>SkateHub-Sobre</title>
 
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sobre.css">
 </head>
 <body>
     <header>
@@ -36,37 +37,75 @@
     </header>
 
     <main>
+        <div class="sobre-layout">
 
-        <section >
-            <h2>Sobre o SkateHub</h2>
+            <div class="sobre-conteudo">
+                <section>
+                    <h2>Sobre o SkateHub</h2>
+                    <p>
+                        O SkateHub é um site criado para reunir informações sobre o mundo do skate.
+                        O objetivo é apresentar skatistas famosos, skateparks, manobras e outros
+                        conteúdos relacionados com esta modalidade.
+                    </p>
+
+                    <h2 id="limitacao">Limitações</h2>
+                    <ul>
+                        <li>As imagens são armazenadas localmente, sem servidor ou base de dados</li>
+                        <li>Os dados dos skatistas e skateparks são estáticos, definidos manualmente no código</li>
+                        <li>Sem sistema de autenticação ou perfil de utilizador</li>
+                        <li>O tema claro/escuro é guardado localmente e pode não persistir em todos os browsers</li>
+                    </ul>
+
+                    <p>
+                        Este projeto foi desenvolvido no âmbito da unidade curricular de
+                        Tecnologias da Internet, utilizando HTML, CSS e JavaScript.
+                    </p>
+
+                    <div class="tecnologias">
+                        <div class="tech-card">
+                            <h3>HTML</h3>
+                            <p>Estrutura semântica das páginas</p>
+                        </div>
+                        <div class="tech-card">
+                            <h3>CSS</h3>
+                            <p>Estilo, layout e responsividade</p>
+                        </div>
+                        <div class="tech-card">
+                            <h3>JavaScript</h3>
+                            <p>Dados dinâmicos, filtros e interatividade</p>
+                        </div>
+                    </div>
 
 
-            <p>
-                O SkateHub é um site criado para reunir informações sobre o mundo do skate.
-                O objetivo é apresentar skatistas famosos, skateparks, manobras e outros
-                conteúdos relacionados com esta modalidade.
-            </p>
-
-            <p>
-                Este projeto foi desenvolvido no âmbito da unidade curricular de
-                Tecnologias da Internet, utilizando HTML, CSS e JavaScript.
-            </p>
-        </section>
-
-        <article class="autor">
-            <img src="../img/sobre/kaiky.jpeg" alt="Foto do autor" class="foto">
-            <div>
-            <h2>Sobre o autor</h2>
-                <p>
-                    O meu nome é Kaiky e sou aluno do curso de Desenvolvimento de Software.
-                    Escolhi o tema skate para este projeto por ser uma área do meu interesse.
-                    O objetivo deste trabalho foi aplicar conhecimentos de HTML, CSS e JavaScript
-                    no desenvolvimento de um website responsivo.
-                </p>
+                </section>
             </div>
 
-        </article>
+            <div class="sobre-sidebar">
+                <article class="autor">
+                    <img src="../img/sobre/kaiky.jpeg" alt="Foto do autor" class="foto">
+                    <div>
+                        <h2>Sobre o autor</h2>
+                        <p>
+                            O meu nome é Kaiky e sou aluno do curso de Desenvolvimento de Software.
+                            Escolhi o tema skate para este projeto por ser uma área do meu interesse.
+                            O objetivo deste trabalho foi aplicar conhecimentos de HTML, CSS e JavaScript
+                            no desenvolvimento de um website responsivo.
+                        </p>
+                    </div>
+                </article>
 
+                <section>
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                        <li><strong>Unidade curricular:</strong> Tecnologias da Internet</li>
+                        <li><strong>Ano letivo:</strong> 2025/2026</li>
+                        <li><strong>Tecnologias:</strong> HTML, CSS e JavaScript</li>
+                        <li><strong>Funcionalidades:</strong> Pesquisa, filtros, paginação, modal, tema claro/escuro</li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 - SkateHub</p>

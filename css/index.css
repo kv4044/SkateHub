@@ -1,20 +1,3 @@
-@media (max-width: 768px) {
-    #lista-destaque-skatistas,
-    #lista-destaque-skateparks {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero {
-        height: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    #lista-destaque-skatistas,
-    #lista-destaque-skateparks {
-        grid-template-columns: 1fr;
-    }
-}
 
 .hero {
     position: relative;
@@ -79,17 +62,7 @@
     margin-top: 0;
 }
 
-#total-skatistas {
-    display: flex;
-    justify-content: center;
-    color: var(--primary-color);
-}
-#total-skateparks {
-    display: flex;
-    justify-content: center;
-    color: var(--primary-color);
-}
-#total-manobras {
+#total-skatistas,#total-skateparks ,#total-manobras {
     display: flex;
     justify-content: center;
     color: var(--primary-color);
@@ -104,4 +77,26 @@
 
 #lista-destaque-skatistas img {
     object-position: 0 15%;
+}
+
+@media (max-width: 768px) {
+    #lista-destaque-skatistas,
+    #lista-destaque-skateparks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        height: 250px;
+    }
+    .status {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #lista-destaque-skatistas,
+    #lista-destaque-skateparks {
+        grid-template-columns: 1fr;
+    }
+
 }

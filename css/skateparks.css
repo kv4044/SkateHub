@@ -4,6 +4,10 @@
     gap: 20px;
 }
 
+.card img{
+    height: 350px;
+}
+
 @media (max-width: 768px) {
     #lista-skateparks {
         grid-template-columns: repeat(2, 1fr);
@@ -14,8 +18,4 @@
     #lista-skateparks {
         grid-template-columns: 1fr;
     }
-}
-
-.card img{
-    height: 350px;
 }

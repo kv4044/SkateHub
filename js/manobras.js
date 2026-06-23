@@ -30,7 +30,9 @@ function mostrarPaginacao(lista) {
         onclick="irParaPagina(${i})">${i}</button>`
     }
 
-}function irParaPagina(pagina){
+}
+
+function irParaPagina(pagina){
     paginaAtual = pagina
     aplicarFiltros()
     window.scrollTo(0, 0)

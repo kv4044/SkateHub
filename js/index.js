@@ -29,5 +29,9 @@ animarContador("total-skatistas",skatistas.length)
 animarContador("total-skateparks",skateparks.length)
 animarContador("total-manobras",manobras.length)
 
-mostrarDestaque(skatistas, "lista-destaque-skatistas", "pages/skatistas.html");
-mostrarDestaque(skateparks, "lista-destaque-skateparks", "pages/skateparks.html");
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("demo").innerHTML = "HTML is loaded!";
+
+    mostrarDestaque(skatistas, "lista-destaque-skatistas", "pages/skatistas.html");
+    mostrarDestaque(skateparks, "lista-destaque-skateparks", "pages/skateparks.html");
+});

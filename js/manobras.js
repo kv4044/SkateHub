@@ -88,7 +88,9 @@ function aplicarFiltros(){
     paginaAtual = 1;
 }
 
-document.getElementById("pesquisa").addEventListener("input", aplicarFiltros);
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("pesquisa").addEventListener("input", aplicarFiltros);
 
-mostrarManobras(manobras);
-atualizarContador(manobras, "");
+    mostrarManobras(manobras);
+    atualizarContador(manobras, "");
+});

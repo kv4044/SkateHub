@@ -94,5 +94,9 @@ function aplicarFiltros() {
 
 document.getElementById("pesquisa").addEventListener("input",aplicarFiltros);
 
-mostrarSkateparks(skateparks);
-atualizarContador(skateparks, "");
+document.addEventListener("DOMContentLoaded", function () {
+    mostrarSkateparks(skateparks);
+    atualizarContador(skateparks, "");
+
+    document.getElementById("demo").innerHTML = "HTML is loaded!";
+});

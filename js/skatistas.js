@@ -88,7 +88,6 @@ function aplicarFiltros() {
 document.getElementById("pesquisa").addEventListener("input", aplicarFiltros)
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("demo").innerHTML = "HTML is loaded!";
 
     mostrarSkatistas(skatistas)
     atualizarContador(skatistas, "")

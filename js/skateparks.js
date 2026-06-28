@@ -97,6 +97,4 @@ document.getElementById("pesquisa").addEventListener("input",aplicarFiltros);
 document.addEventListener("DOMContentLoaded", function () {
     mostrarSkateparks(skateparks);
     atualizarContador(skateparks, "");
-
-    document.getElementById("demo").innerHTML = "HTML is loaded!";
 });

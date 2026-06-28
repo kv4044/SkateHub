@@ -30,7 +30,6 @@ animarContador("total-skateparks",skateparks.length)
 animarContador("total-manobras",manobras.length)
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("demo").innerHTML = "HTML is loaded!";
 
     mostrarDestaque(skatistas, "lista-destaque-skatistas", "pages/skatistas.html");
     mostrarDestaque(skateparks, "lista-destaque-skateparks", "pages/skateparks.html");
